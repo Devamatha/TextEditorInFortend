@@ -1,0 +1,50 @@
+<table>
+  <thead>
+    <tr>
+      <th>Template ID</th>
+      <th>Content</th>
+      <th>Font Size</th>
+      <th>Font Family</th>
+      <th>Font Style</th>
+      <th>Text Alignment</th>
+      <th>Text Color</th>
+      <th>Background Color</th>
+      <th>Bullets</th>
+      <th>Numbering</th>
+      <th>Indentation</th>
+      <th>Hyperlinks</th>
+      <th>Images</th>
+      <th>Spell Check</th>
+      <th>Find Replace</th>
+      <th>Word Count</th>
+      <th>Line Numbers</th>
+      <th>Fullscreen Mode</th>
+      <th>Auto Save</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let template of textDataList">
+      <td>{{ template.templateId }}</td>
+      <td>{{ template.content }}</td>
+      <td>{{ template.fontSize }}</td>
+      <td>{{ template.fontFamily }}</td>
+      <td>{{ template.fontStyle }}</td>
+      <td>{{ template.textAlignment }}</td>
+      <td>{{ template.textColor }}</td>
+      <td>{{ template.backgroundColor }}</td>
+      <td>{{ template.bullets }}</td>
+      <td>{{ template.numbering }}</td>
+      <td>{{ template.indentation }}</td>
+      <td>{{ template.hyperlinks }}</td>
+      <td>{{ template.images }}</td>
+      <td>{{ template.spellCheck }}</td>
+      <td>{{ template.findReplace }}</td>
+      <td>{{ template.wordCount }}</td>
+      <td>{{ template.lineNumbers }}</td>
+      <td>{{ template.fullscreenMode }}</td>
+      <td>{{ template.autoSave }}</td>
+      <td><button (click)="openPreview(template)">Preview</button></td>
+    </tr>
+  </tbody>
+</table>
